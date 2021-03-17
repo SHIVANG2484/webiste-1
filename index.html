@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="DNwqlFgFlfVMSxs_LhNx6Xr7f9HDprZATiUEQWTGN2c" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<title>WELCOME TO OUR FIRST PAGE</title>
+  <link rel="icon" href="im/logos/l1.jpg">
+<title>SHIVANG SHARMA</title>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -17,7 +19,61 @@
 	<title></title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -62,44 +118,40 @@ body {
 }
 @keyframes blink {
   0%  { background-color: pink; }
-  49% { background-color: #red; }
+  49% { background-color: red; }
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
 	</style>
-  <section>
-    
-   <div class="
-   ">
-   <nav>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">NAVBAR</a>
-
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a href="https://shivang2484.github.io/drakstar-website/">
-         <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="WELCOME BY SHIVANG">WEBSITE</button></a>
-       <a href="http://shivang3012.epizy.com/">
-        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="HELLO BY SHIVANG">CONTACT US</button></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-   </nav>
-</div>
-  </div>
-  </section>
+  
 </head>
 <body>
+  
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active">Techz Player</a>
+    <a href="index.html">WELCOME</a>
+    <a href="home.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="services.html">SERVICES</a>
+    <a href="http://shivang.epizy.com/?i=1">Contact Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 <div>
 
  <div class="container">
@@ -111,10 +163,10 @@ body {
 	const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const typingDelay = 200;
-const textArray = ["WELCOME TO OUR FIRST PAGE OF WEBSITE", "FOR VIEWING OUR WEBSITE CLICK ON WEBSITE BUTTON GIVEN ON NAVBAR", "DEVLOPED BY © SHIVANG", "THANKS FOR VEIWING"];
-const erasingDelay = 200;
-const newTextDelay = 2000; // Delay between current and next text
+const typingDelay = 50;
+const textArray = ["WELCOME","THIS IS THE OFFICIAL WEBSITE OF TECHZ PLAYZER", "FOR VIEWING ANY OTHER PAGE CLICK ON NAVBAR", "DEVLOPED AND MANAGED BY © SHIVANG","THANKS FOR VEIWING"];
+const erasingDelay = 80;
+const newTextDelay = 1000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -150,5 +202,9 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 </script>
+<!-- Appy Chatbot widget, Paste the code in the <body> section -->
+  <script id="appyWidgetInit" src="https://chatbot.appypie.com/widget/loadbuild.js?cid=kmd1xxha-AGENT1615961816256-BOTID1615961816256&name=mixBuild"></script>
+  <!-- /. End Appy chatbot widget code -->
+  
 </body>
 </html>
